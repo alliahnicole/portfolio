@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+  }
+
+  p.lead {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: medium;
+    background: #070000;
+    opacity: 1;
+    margin: 40px auto;
+    padding: 30px 60px;
+    border-radius: 40px;
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    color: #dfdfdf;
+    font-weight: bolder;
+  }
+
+  p.about {
+    font-family: 'Cascadia Code', sans-serif;
+    color: #dfdfdf;
+  }
+
+  p.portfolio {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: medium;
+    background: #070000;
+    opacity: 1;
+    margin: 40px auto;
+    padding: 30px 60px;
+    border-radius: 40px;
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    color: #dfdfdf;
+  }
+
+  p.contact {
+    font-family: 'Cascadia Code', sans-serif;
+    color: #dfdfdf;
+  }
+
+  p.email {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: medium;
+    background: #070000;
+    opacity: 1;
+    padding: 30px 60px;
+    border-radius: 40px;
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    color: #0d9506;
+  }
+
+  .row {
+    font-family: 'Cascadia Code', sans-serif;
+    color: #dfdfdf;
+  }
+
+  h1 {
+    opacity: 0.8;
+    font-family: 'Monoton', sans-serif;
+    text-align: center;
+    color: #dfdfdf;
+  }
+
+  h1::hover {
+    color: #ec7fff;
+    animation-duration: 2s;
+    animation: ease-in-out;
+    text-shadow: 2px 2px 8px #070000;
+  }
+
+  h2{
+    font-family:'Cascadia Code', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: #dfdfdf;
+  }
+
+  h2::after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: #ec7fff;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+ 
+  main {
+    flex: 1 0 auto;
+  }
+
+  p.text-center img {
+    height: 50%;
+    width: 50%; 
+    padding-right: 5%;;
+    margin-left: 5%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out; 
+    cursor: pointer;
+  }
+
+  p.text-center img:hover {
+    transform: scale(1.05); 
+    filter: grayscale(0%);
+  }
+
+  .card {
+    background: #070000;
+    border-radius: 20px;
+  }
+
+  .card .card-img-top {
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-text {
+    font-family: 'Cascadia Code', sans-serif;
+    color: #dfdfdf;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  .card-title {
+    font-family: 'Cascadia Code', sans-serif;
+    color: #dfdfdf;
+  }
+
+  a.btn  {
+    background-color: #dfdfdf;
+    opacity: 0.9;
+  }
+
+  #one a.btn:hover {
+    background-color: #f15362;
+  }
+
+  #two a.btn:hover {
+    background-color: #ffaa00;
+  }
+  
+  #three a.btn:hover {
+    background-color: #9532ff;
+  }
+
+  footer{
+    flex-shrink: 0;
+
+  }
+  header {
+      background: no-repeat center center;
+      background-size: cover;
+      color: #dfdfdf;
+  }
+  
+  .color-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      min-height: 60vh;
+  }
+  
+  .singleCol {
+      max-width: 750px;
+      color: #130101;
+  }
+  
+  footer {
+      background-color: #3a3a3a;
+  }
+  
+  footer a{
+      color: #dfdfdf;
+  }
+  
+  footer a:hover{
+      color: #dfdfdf;
+  }
+  
+  @media (max-width: 768px) {
+      .color-overlay {
+          min-height: 30vh;
+      }
+  }
+
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
